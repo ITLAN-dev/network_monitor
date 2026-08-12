@@ -25,7 +25,7 @@
 Скачайте и установите Python 3.6+ с официального сайта:  
 👉 [python.org/downloads/windows/](https://www.python.org/downloads/windows/)
 
-**Важно:** При установке обязательно поставьте галочку **"Add Python to PATH"**.
+**Важно:** При установке обязательно поставьте галку **"Add Python to PATH"**.
 
 Проверьте установку:
 ```
