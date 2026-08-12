@@ -1,20 +1,6 @@
 # Network Monitor - TIME_WAIT и сетевая нагрузка
 
 Мониторинг TCP-соединений в состоянии `TIME_WAIT` и сетевой нагрузки в реальном времени. Помогает диагностировать проблемы с исчерпанием портов, переполнением буферов сети и DDoS-подобными нагрузками.
-
-## Содержание
-
-- [Возможности](#Возможности)
-- [Установка](#Установка)
-- [Быстрый старт](#Быстрый-старт)
-- [Флаги и параметры](#Флаги-и-параметры)
-- [Режимы работы](#Режимы-работы)
-- [Примеры использования](#Примеры-использования)
-- [Метрики](#Метрики)
-- [Пример вывода](#Пример-вывода-тихий-режим)
-- [Диагностика проблем](#Диагностика-проблем)
-- [Совместимость](#Совместимость)
-
 ---
 
 ## 🚀 Возможности
@@ -43,12 +29,12 @@
 
 Проверьте установку:
 ```
-py --version
+python --version
 ```
 2. Установите зависимость
 ```
 
-py -m pip install psutil
+python -m pip install psutil
 ```
 3. Скачайте скрипт
 
@@ -58,15 +44,15 @@ py -m pip install psutil
 
 Базовый запуск (тихий режим)
 ```
-py network_monitor.py
+python network_monitor.py
 ```
 Для гигабитной сети с настраиваемыми порогами
 ```
-py network_monitor.py -t 1500 -w 800 -n 950 -nw 700
+python network_monitor.py -t 1500 -w 800 -n 950 -nw 700
 ```
 Вербозный режим (видно всё)
 ```
-py network_monitor.py -v
+python network_monitor.py -v
 ```
 ⚙️ Флаги и параметры
 Основные флаги
@@ -86,52 +72,52 @@ py network_monitor.py -v
 
 Показывает только предупреждения, ошибки и краткий статус каждые 10 секунд.
 ```
-py network_monitor.py
+python network_monitor.py
 ```
 2. Вербозный режим
 
 Показывает каждую проверку с полной статистикой.
 ```
-py network_monitor.py -v
+python network_monitor.py -v
 ```
 3. Максимально тихий режим
 
 Показывает только критические ошибки.
 ```
-py network_monitor.py -q
+python network_monitor.py -q
 ```
 
 4. С записью в файл
 
 Все выводы дублируются в указанный файл.
 ```
-py network_monitor.py -l monitor.log
+python network_monitor.py -l monitor.log
 ```
 
 📝 Примеры использования
 Для гигабитной сети (рекомендуемые настройки)
 ```
-py network_monitor.py -t 1500 -w 800 -n 950 -nw 700
+python network_monitor.py -t 1500 -w 800 -n 950 -nw 700
 ```
 
 Вербозный режим с сохранением в файл
 ```
-py network_monitor.py -v -l full_log.txt -t 1500 -w 800 -n 950 -nw 700
+python network_monitor.py -v -l full_log.txt -t 1500 -w 800 -n 950 -nw 700
 ```
 
 Только ошибки в лог
 ```
-py network_monitor.py -q -l errors.log -t 1500 -w 800
+python network_monitor.py -q -l errors.log -t 1500 -w 800
 ```
 
 Проверка каждые 2 секунды
 ```
-py network_monitor.py -i 2 -t 1500 -w 800
+python network_monitor.py -i 2 -t 1500 -w 800
 ```
 
 Показать справку
 ```
-py network_monitor.py -h
+python network_monitor.py -h
 ```
 
 📈 Метрики
