@@ -145,16 +145,60 @@ py monitor_pro.py -v \
 
 **MIT License**
 
+Copyright (c) 2026 Monitor PRO
+
+```text
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
 ---
 
 ## 🤝 Вклад в проект
 
+
 Если вы нашли баг или хотите предложить улучшение:
 
 1. Создайте **Issue** с описанием проблемы.
+
 2. Сделайте **Fork** репозитория.
-3. Создайте ветку с новой функцией.
-4. Отправьте **Pull Request**.
+
+3. Создайте ветку с новой функцией:
+
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+
+4. Сделайте коммит:
+
+   ```bash
+   git commit -m "Add some amazing feature"
+   ```
+
+5. Отправьте **Pull Request**.
+
+---
+
+## 📞 Контакты
+
+* **Автор:** ITLAN-dev
+* **Email:** -
+* **GitHub:** [github.com/ITLAN-dev](https://github.com/ITLAN-dev)
 
 ---
 
@@ -162,7 +206,6 @@ py monitor_pro.py -v \
 
 Если этот инструмент помог вам в работе, поставьте звезду на GitHub! ⭐
 
-Это поможет другим специалистам найти полезный инструмент.
 
 ---
 
